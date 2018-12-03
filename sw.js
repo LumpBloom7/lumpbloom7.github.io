@@ -14,16 +14,21 @@ self.addEventListener('install', function (event) {
   );
 });
 
-self.addEventListener('fetch', function(event) {
+self.addEventListener('fetch', function (event) {
   event.respondWith(
+    // Try the cache
     caches.open(cacheName).then(function(cache) {
-      return cache.match(event.request).then(function(response) {
-        var fetchPromise = fetch(event.request).then(function(networkResponse) {
+      return cache.match(event.request).then(function (response) {
+        var fetchPromise = fetch(event.request).then(function (networkResponse) {
           cache.put(event.request, networkResponse.clone());
           return networkResponse;
         })
         return response || fetchPromise;
+      }).catch(function () {
+        // If both fail, show a generic fallback:
+        return caches.match('/offline.html');
       })
     })
   );
+    
 });
