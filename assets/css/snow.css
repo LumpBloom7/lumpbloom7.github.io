@@ -1,0 +1,162 @@
+  #snow {
+    pointer-events: none;
+    background: none;
+    font-family: Androgyne;
+    background-image: url('/assets/img/seasonal/s1.png'),
+    url('/assets/img/seasonal/s2.png'),
+    url('/assets/img/seasonal/s3.png');
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    -webkit-animation: snow 10s linear infinite;
+    -moz-animation: snow 10s linear infinite;
+    -ms-animation: snow 10s linear infinite;
+    animation: snow 10s linear infinite;
+  }
+
+  @keyframes snow {
+    0% {
+      background-position: 500px 0px, 100px 0px, -100px 0px;
+    }
+    10% {
+      background-position: 500px 100px, 110px 40px, -100px 30px;
+    }
+    20% {
+      background-position: 500px 200px, 120px 80px, -100px 60px;
+    }
+    30% {
+      background-position: 500px 300px, 130px 120px, -100px 90px;
+    }
+    40% {
+      background-position: 500px 400px, 140px 160px, -100px 120px;
+    }
+    50% {
+      background-position: 500px 500px, 150px 200px, -100px 150px;
+    }
+    60% {
+      background-position: 500px 600px, 140px 240px, -100px 180px;
+    }
+    70% {
+      background-position: 500px 700px, 130px 280px, -100px 210px;
+    }
+    80% {
+      background-position: 500px 800px, 120px 320px, -100px 240px;
+    }
+    90% {
+      background-position: 500px 900px, 110px 360px, -100px 270px;
+    }
+    100% {
+      background-position: 500px 1000px, 100px 400px, -100px 300px;
+    }
+  }
+
+  @-moz-keyframes snow {
+    0% {
+      background-position: 500px 0px, 100px 0px, -100px 0px;
+    }
+    10% {
+      background-position: 500px 100px, 110px 40px, -100px 30px;
+    }
+    20% {
+      background-position: 500px 200px, 120px 80px, -100px 60px;
+    }
+    30% {
+      background-position: 500px 300px, 130px 120px, -100px 90px;
+    }
+    40% {
+      background-position: 500px 400px, 140px 160px, -100px 120px;
+    }
+    50% {
+      background-position: 500px 500px, 150px 200px, -100px 150px;
+    }
+    60% {
+      background-position: 500px 600px, 140px 240px, -100px 180px;
+    }
+    70% {
+      background-position: 500px 700px, 130px 280px, -100px 210px;
+    }
+    80% {
+      background-position: 500px 800px, 120px 320px, -100px 240px;
+    }
+    90% {
+      background-position: 500px 900px, 110px 360px, -100px 270px;
+    }
+    100% {
+      background-position: 500px 1000px, 100px 400px, -100px 300px;
+    }
+  }
+
+  @-webkit-keyframes snow {
+    0% {
+      background-position: 500px 0px, 100px 0px, -100px 0px;
+    }
+    10% {
+      background-position: 500px 100px, 110px 40px, -100px 30px;
+    }
+    20% {
+      background-position: 500px 200px, 120px 80px, -100px 60px;
+    }
+    30% {
+      background-position: 500px 300px, 130px 120px, -100px 90px;
+    }
+    40% {
+      background-position: 500px 400px, 140px 160px, -100px 120px;
+    }
+    50% {
+      background-position: 500px 500px, 150px 200px, -100px 150px;
+    }
+    60% {
+      background-position: 500px 600px, 140px 240px, -100px 180px;
+    }
+    70% {
+      background-position: 500px 700px, 130px 280px, -100px 210px;
+    }
+    80% {
+      background-position: 500px 800px, 120px 320px, -100px 240px;
+    }
+    90% {
+      background-position: 500px 900px, 110px 360px, -100px 270px;
+    }
+    100% {
+      background-position: 500px 1000px, 100px 400px, -100px 300px;
+    }
+  }
+
+  @-ms-keyframes snow {
+    0% {
+      background-position: 500px 0px, 100px 0px, -100px 0px;
+    }
+    10% {
+      background-position: 500px 100px, 110px 40px, -100px 30px;
+    }
+    20% {
+      background-position: 500px 200px, 120px 80px, -100px 60px;
+    }
+    30% {
+      background-position: 500px 300px, 130px 120px, -100px 90px;
+    }
+    40% {
+      background-position: 500px 400px, 140px 160px, -100px 120px;
+    }
+    50% {
+      background-position: 500px 500px, 150px 200px, -100px 150px;
+    }
+    60% {
+      background-position: 500px 600px, 140px 240px, -100px 180px;
+    }
+    70% {
+      background-position: 500px 700px, 130px 280px, -100px 210px;
+    }
+    80% {
+      background-position: 500px 800px, 120px 320px, -100px 240px;
+    }
+    90% {
+      background-position: 500px 900px, 110px 360px, -100px 270px;
+    }
+    100% {
+      background-position: 500px 1000px, 100px 400px, -100px 300px;
+    }
+  }
