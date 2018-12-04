@@ -68,7 +68,7 @@ p {
 .buttons:focus,
 .buttons:active {
   transition: all .18s ease-in;
-  color: gray;
+  color: rgba(255,255,255,0.5);
   transform: scale(0.95);
 }
 
