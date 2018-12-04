@@ -4,31 +4,29 @@ var cacheFiles = [
   "/assets/css/style.css",
   "/index.html",
   "/404.html",
-  "/offline.html"]
-
-self.addEventListener('install', function (event) {
+  "/offline.html"
+]
+self.addEventListener('install', function(event) {
   event.waitUntil(
-    caches.open(cacheName).then(function (cache) {
+    caches.open(cacheName).then(function(cache) {
       return cache.addAll(cacheFiles);
     })
   );
 });
-
-self.addEventListener('fetch', function (event) {
+self.addEventListener('fetch', function(event) {
   event.respondWith(
     // Try the cache
     caches.open(cacheName).then(function(cache) {
-      return cache.match(event.request).then(function (response) {
-        var fetchPromise = fetch(event.request).then(function (networkResponse) {
+      return cache.match(event.request).then(function(response) {
+        var fetchPromise = fetch(event.request).then(function(networkResponse) {
           cache.put(event.request, networkResponse.clone());
           return networkResponse;
         })
         return response || fetchPromise;
-      }).catch(function () {
+      }).catch(function() {
         // If both fail, show a generic fallback:
         return caches.match('/offline.html');
       })
     })
   );
-    
 });
