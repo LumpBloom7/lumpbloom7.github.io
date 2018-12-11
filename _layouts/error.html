@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+
+    <div class="bg-image"></div>
+    <div class="bg-text">
+
+        {{ content }}
+
+        <div class="buttons">
+            <div class="button" data-balloon="Home" data-balloon-pos="down">
+                <a aria-label="Home" href="{{site.baseurl}}">
+                    <i class="fas fa-home"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

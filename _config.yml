@@ -1,0 +1,27 @@
+title: Bloom!
+email: derrick.timmermans@outlook.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Just a userpage for myself.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://lumpbloom7.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: lumpbloom7
+github_username:  LumpBloom7
+skype_username:  derrick.timmermans
+steam_username:  LumpBloom7
+
+theme_color: #ff32b4
+
+# Build settings
+markdown: kramdown
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+
+    <div class="bg-image"></div>
+    <div class="bg-text">
+
+        {{ content }}
+
+        <div class="buttons">
+            <div class="button" data-balloon="E-Mail" data-balloon-pos="down">
+                <a aria-label="E-Mail" href="mailto:{{ site.email }}" target="_blank" rel="noopener">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <div class="button" data-balloon="Twitter" data-balloon-pos="down">
+                <a aria-label="Twitter" href="https://www.twitter.com/{{site.twitter_username}}" target="_blank" rel="noopener">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <div class="button" data-balloon="Skype" data-balloon-pos="down">
+                <a aria-label="Skype" href="skype:live:{{site.skype_username}}" target="_blank" rel="noopener">
+                    <i class="fab fa-skype"></i>
+                </a>
+            </div>
+            <div class="button" data-balloon="Steam" data-balloon-pos="down">
+                <a aria-label="Steam" href="https://www.steamcommunity.com/id/{{site.steam_username}}" target="_blank"
+                    rel="noopener">
+                    <i class="fab fa-steam"></i>
+                </a>
+            </div>
+            <div class="button" data-balloon="GitHub" data-balloon-pos="down">
+                <a aria-label="GitHub" href="https://github.com/{{site.github_username}}" target="_blank" rel="noopener">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

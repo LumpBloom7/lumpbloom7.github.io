@@ -50,12 +50,10 @@ p {
   text-align: center;
   font-family: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif
 }
-
-.avatar {
+.bg-text img{
   border-radius: 50%;
   width: 150px;
 }
-
 .buttons {
   justify-content: space-between;
   color: white;
