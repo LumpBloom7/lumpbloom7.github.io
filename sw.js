@@ -2,11 +2,11 @@
 ---
 var cacheName = 'lumpbloom7-page';
 var cacheFiles = [
-  "{{site.baseurl}}assets/img/currentAvatar.png",
-  "{{site.baseurl}}assets/css/style.css",
-  "{{site.baseurl}}index.html",
-  "{{site.baseurl}}404.html",
-  "{{site.baseurl}}offline.html"
+  "{{site.baseurl}}/assets/img/currentAvatar.png",
+  "{{site.baseurl}}/assets/css/style.css",
+  "{{site.baseurl}}/index.html",
+  "{{site.baseurl}}/404.html",
+  "{{site.baseurl}}/offline.html"
 ]
 self.addEventListener('install', function(event) {
   event.waitUntil(

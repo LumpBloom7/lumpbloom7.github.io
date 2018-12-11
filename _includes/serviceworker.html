@@ -1,6 +1,6 @@
 <script>
     if (navigator.serviceWorker) {
-        navigator.serviceWorker.register('{{site.baseurl}}sw.js').then(function (reg) {
+        navigator.serviceWorker.register("{{site.baseurl}}/sw.js").then(function (reg) {
             if (!reg.installing) return;
             console.log("[*] ServiceWorker is installing...");
             var worker = reg.installing;
