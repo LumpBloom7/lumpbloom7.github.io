@@ -1,0 +1,20 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Build site",
+        "type": "shell",
+        "command": "jekyll build --incremental",
+        "group": "build",
+        "problemMatcher": []
+      },
+      {
+        "label": "Build and serve site (Test on localhost:4000)",
+        "type": "shell",
+        "command": "jekyll serve --incremental",
+        "group": "test"
+      }
+    ]
+  }

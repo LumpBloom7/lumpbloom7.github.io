@@ -3,22 +3,22 @@
 <html lang="en">
 
 {% include head.html %}
-
+<link rel="stylesheet" href="{{site.baseurl}}/assets/css/home.css">
 <body>
 
-    <div class="bg-image"></div>
-    <div class="bg-text">
+  <div class="background"></div>
+  <div class="centerBox">
 
-        {{ content }}
+    {{ content }}
 
-        <div class="buttons">
-            <div class="button" data-balloon="Home" data-balloon-pos="down">
-                <a aria-label="Home" href="{{site.baseurl}}/">
+    <div class="buttons">
+      <div class="button" data-balloon="Home" data-balloon-pos="down">
+        <a aria-label="Home" href="{{site.baseurl}}/">
                     <i class="fas fa-home"></i>
                 </a>
-            </div>
-        </div>
+      </div>
     </div>
+  </div>
 </body>
 
 </html>
