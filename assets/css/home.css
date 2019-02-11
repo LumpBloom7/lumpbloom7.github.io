@@ -96,9 +96,10 @@ a {
 .centerBox  .buttons {
   justify-content: space-between;
   color: white;
-  width: 100%;
+  width: fit-content;
   padding: 1rem;
   transition: all .18s ease-out;
+  display: inline-block;
 }
 
 .centerBox .buttons:hover,
