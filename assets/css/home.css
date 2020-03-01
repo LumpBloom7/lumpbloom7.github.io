@@ -8,6 +8,7 @@ html {
   font-family: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
   background-color: transparent;
+  font-display: swap;
 }
 
 * {
