@@ -9,7 +9,7 @@ github_username:  LumpBloom7
 skype_username:  derrick.timmermans
 steam_username:  LumpBloom7
 
-theme_color: #ff32b4
+theme_color: "#ff32b4"
 
 # Build settings
 markdown: kramdown
