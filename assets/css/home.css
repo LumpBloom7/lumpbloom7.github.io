@@ -74,6 +74,9 @@ a {
 .centerBox img {
   border-radius: 50%;
   width: 150px;
+  border-width: thick;
+  border-style: groove;
+  border-color: #ff0064;
 }
 
 .centerBox  .buttons {
