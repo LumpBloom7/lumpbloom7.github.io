@@ -1,5 +1,5 @@
---- 
---- 
+---
+---
 
 body,
 html {
@@ -7,7 +7,7 @@ html {
   margin: 0;
   font-family: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
-  background-color: transparent;
+  background: radial-gradient(circle, rgba(255,0,100,1) 0%, rgba(48,0,19,1) 100%);
 }
 
 * {
@@ -17,23 +17,6 @@ html {
 a {
   color: inherit;
 }
-
-.background {
-  /* The image used */
-  background-image: url("{{site.baseurl}}/assets/img/bg1.jpg");
-
-  /* Add the blur effect */
-  filter: blur(1px) brightness(60%);
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 
 .links {
   position: absolute;
@@ -116,7 +99,7 @@ a {
   font-size: 2rem;
   display: inline-block;
   vertical-align: middle;
-  
+
 }
 
 .centerBox .buttons .button:hover,
