@@ -7,6 +7,7 @@ html {
   margin: 0;
   font-family: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
+  overscroll-behavior: none;
   background: radial-gradient(circle, rgba(255,0,100,1) 0%, rgba(48,0,19,1) 100%);
 }
 
