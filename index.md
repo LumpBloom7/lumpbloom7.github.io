@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Bloom!
+title: Bloom's userpage
 ---
 
 ![My avatar]({{site.baseurl}}assets/img/avatar.png)
