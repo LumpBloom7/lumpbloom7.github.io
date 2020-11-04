@@ -4,42 +4,43 @@
 
 {% include head.html %}
 <link rel="stylesheet" href="{{site.baseurl}}/assets/css/home.css">
+
 <body>
   <div class="centerBox">
 
     {{ content }}
 
     <div class="buttons">
-        <div class="button" data-balloon="Blog" data-balloon-pos="down">
-            <a aria-label="E-Mail" href="https://lumpbloom7.github.io/Blog/" target="_blank" rel="noopener">
-                        <i class="fas fa-rss"></i>
-                    </a>
-          </div>
       <div class="button" data-balloon="E-Mail" data-balloon-pos="down">
         <a aria-label="E-Mail" href="mailto:{{ site.email }}" target="_blank" rel="noopener">
-                    <i class="fas fa-envelope"></i>
-                </a>
+          <i class="fas fa-envelope"></i>
+        </a>
       </div>
       <div class="button" data-balloon="Twitter" data-balloon-pos="down">
         <a aria-label="Twitter" href="https://www.twitter.com/{{site.twitter_username}}" target="_blank" rel="noopener">
-                    <i class="fab fa-twitter"></i>
-                </a>
+          <i class="fab fa-twitter"></i>
+        </a>
       </div>
       <div class="button" data-balloon="Skype" data-balloon-pos="down">
         <a aria-label="Skype" href="skype:live:{{site.skype_username}}" target="_blank" rel="noopener">
-                    <i class="fab fa-skype"></i>
-                </a>
+          <i class="fab fa-skype"></i>
+        </a>
       </div>
       <div class="button" data-balloon="Steam" data-balloon-pos="down">
         <a aria-label="Steam" href="https://www.steamcommunity.com/id/{{site.steam_username}}" target="_blank"
-                    rel="noopener">
-                    <i class="fab fa-steam"></i>
-                </a>
+          rel="noopener">
+          <i class="fab fa-steam"></i>
+        </a>
       </div>
       <div class="button" data-balloon="GitHub" data-balloon-pos="down">
         <a aria-label="GitHub" href="https://github.com/{{site.github_username}}" target="_blank" rel="noopener">
-                    <i class="fab fa-github"></i>
-                </a>
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="button" data-balloon="Support me" data-balloon-pos="down">
+        <a aria-label="Sponsor" href="{{site.baseurl}}/sponsor" target="_blank" rel="noopener">
+          <i class="fas fa-heart"></i>
+        </a>
       </div>
     </div>
   </div>
