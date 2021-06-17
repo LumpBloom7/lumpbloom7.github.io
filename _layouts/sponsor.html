@@ -6,32 +6,36 @@
 <link rel="stylesheet" href="{{site.baseurl}}/assets/css/home.css">
 
 <body>
-  <div class="centerBox">
+    <div class="centerBox">
 
-    {{ content }}
-    <div class="buttons">
-      <div class="button" data-balloon="PayPal" data-balloon-pos="down">
-        <a aria-label="Paypal" href="https://paypal.me/DerrickTimmermans" target="_blank" rel="noopener">
-          <i class="fab fa-paypal"></i>
-        </a>
-      </div>
-      <div class="button" data-balloon="Ko-fi" data-balloon-pos="down">
-        <a aria-label="Kofi" href="https://ko-fi.com/bloom" target="_blank" rel="noopener">
-          <i class="fas fa-mug-hot"></i>
-        </a>
-      </div>
+        {{ content }}
+
+        <iframe src="https://github.com/sponsors/LumpBloom7/card" title="Sponsor LumpBloom7" height="225" width="600"
+            style="border: 0;"></iframe>
+
+        <div class="buttons">
+            <div class="button" data-balloon="PayPal" data-balloon-pos="down">
+                <a aria-label="Paypal" href="https://paypal.me/DerrickTimmermans" target="_blank" rel="noopener">
+                    <i class="fab fa-paypal"></i>
+                </a>
+            </div>
+            <div class="button" data-balloon="Ko-fi" data-balloon-pos="down">
+                <a aria-label="Kofi" href="https://ko-fi.com/bloom" target="_blank" rel="noopener">
+                    <i class="fas fa-mug-hot"></i>
+                </a>
+            </div>
+        </div>
+
+        <br />
+
+        <div class="buttons">
+            <div class="button" data-balloon="Home" data-balloon-pos="down">
+                <a aria-label="Home" href="{{site.baseurl}}/">
+                    <i class="fas fa-home"></i>
+                </a>
+            </div>
+        </div>
     </div>
-
-    <br />
-
-    <div class="buttons">
-      <div class="button" data-balloon="Home" data-balloon-pos="down">
-        <a aria-label="Home" href="{{site.baseurl}}/">
-          <i class="fas fa-home"></i>
-        </a>
-      </div>
-    </div>
-  </div>
 </body>
 
 </html>
