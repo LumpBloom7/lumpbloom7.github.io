@@ -5,10 +5,10 @@ body,
 html {
   height: 100%;
   margin: 0;
-  font-family: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: system-ui, sans-serif;
   font-weight: bold;
   overscroll-behavior: none;
-  background: radial-gradient(circle, rgba(255,0,100,1) 0%, rgba(48,0,19,1) 100%);
+  background: radial-gradient(circle, rgba(255,0,100,1) 0%, rgba(127.5,0,50,1) 100%);
 }
 
 * {
@@ -75,9 +75,6 @@ a {
 .centerBox img {
   border-radius: 50%;
   width: 150px;
-  border-width: thick;
-  border-style: groove;
-  border-color: #ff0064;
 }
 
 .centerBox  .buttons {
