@@ -79,6 +79,7 @@ a {
 
 .centerBox img {
   width: 150px;
+  border-radius: 50%;
 }
 
 .centerBox .buttons {
