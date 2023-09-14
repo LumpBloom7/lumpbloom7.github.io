@@ -3,7 +3,7 @@ layout: default
 title: Bloom's userpage
 ---
 
-![My avatar]({{site.baseurl}}assets/img/avatar.png)
+![My avatar]({{site.baseurl}}assets/img/2023BloomAvatar.jpg)
 
 # Derrick Timmermans
 
