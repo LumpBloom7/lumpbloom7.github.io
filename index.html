@@ -11,19 +11,29 @@
 
     <link rel="stylesheet" href="assets/styles/profile.css">
     <script src="https://unpkg.com/feather-icons"></script>
+    <script src="assets/scripts/textAdjuster.js"></script>
 </head>
 
 
-<body>
+<body onload="OnLoad()">
     <!--     <div class="links">
         <a href="https://github.com/LumpBloom7/sentakki" class="directLink">
             sentakki
         </a>
     </div> -->
+    <div class="bg"></div>
     <div class="profile">
-        <img class="avatar" src="assets/images/avatar.webp" alt="Avatar" />
+        <div>
+            <img class="avatar" src="assets/images/avatar.webp" alt="Avatar" />
+            <img class="logo" src="assets/images/vtoob.png" alt="logo" />
+        </div>
+
         <h1 class="name">Derrick Timmermans</h1>
-        <p class="description">A nerd that specializes in programming stuff that don't work half of the time.</p>
+        <p class="description">
+            <span id="desc1">Plushie enjoyer</span><br />
+            <span id="desc2">Half-baked programmer</span><br />
+            <span id="desc3">Rhythm game enthusiast</span><br />
+        </p>
 
         <div class="buttonArea">
             <a href="mailto:derrick.timmermans@outlook.com">
@@ -40,10 +50,52 @@
             </a>
         </div>
     </div>
+
+    <div class="attribution">
+        <div class="buttonArea" id="attrButtons" style="display: none;">
+            <a id="attriInfoButton">
+                <i class="socialButton" data-feather="info"></i>
+            </a>
+        </div>
+        <a href="https://www.x.com/Kourihase" target="_blank">
+            <div id="attriContent" class="content">
+                <div>
+                    <img class="avatar"
+                        src="https://pbs.twimg.com/profile_images/1959656535258480640/kdsT3LQc_400x400.jpg"
+                        alt="Avatar" />
+                </div>
+                <p class="description">
+                    Artwork made by
+                </p>
+                <h1 class="name">Kourihase</h1>
+            </div>
+        </a>
+    </div>
+
+    <div class="flowers">
+        <img class="flower1" src="assets/images/flower1.png" />
+        <img class="flower2" src="assets/images/flower2.png" />
+    </div>
+
 </body>
 
 <script>
     feather.replace();
+</script>
+
+<script>
+    button = document.getElementById("attriInfoButton")
+    content = document.getElementById("attriContent")
+    buttonArea = document.getElementById("attrButtons")
+
+    button.onclick = function () { myFunction() };
+    content.style.display = "none";
+    buttonArea.style.display = "flex";
+
+    function myFunction() {
+        content.style.display = "flex";
+        buttonArea.style.display = "none";
+    }
 </script>
 
 

@@ -1,7 +1,50 @@
+@font-face {
+    font-family: 'Yuruka';
+    src: url('/assets/fonts/FOT-Yuruka\ Std.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('/assets/fonts/Outfit-VariableFont_wght.ttf') format('opentype');
+}
+
 html,
 body {
-    background: radial-gradient(#ff0064, black);
     height: 100%;
+    background-color: black;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+div.flowers {
+    img.flower1 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 2.5em;
+        width: 6.48em;
+    }
+
+    img.flower2 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 2.5em;
+        width: 5.256em;
+    }
+}
+
+.bg {
+    background-image: url("/assets/images/bgcatv2.png");
+    height: 100%;
+    object-fit: fill;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(20px) brightness(0.6);
 }
 
 .disable-select {
@@ -13,34 +56,119 @@ body {
 
 div.profile {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
     width: auto;
+    margin: 3rem;
+
+    h1.name {
+        font-family: "Yuruka";
+        font-size: 3rem;
+        color: #ff0064;
+        margin-bottom: 0;
+        margin-top: 0;
+        -webkit-text-stroke: 0.15rem black;
+        line-height: 3rem;
+    }
+
+    p.description {
+        font-family: "Outfit";
+        font-size: 2.1rem;
+        color: black;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 600;
+        text-shadow: 0 0 0.3rem #ff0064;
+    }
+
+    img.avatar {
+        position: relative;
+        display: inline;
+        height: 9rem;
+        border-radius: 50% 50% 50% 50%;
+        border-style: solid;
+        border-color: #ff0064;
+        border-width: 0.2rem;
+    }
+
+    img.logo {
+        position: relative;
+        display: inline;
+        height: 9rem;
+    }
+
+    .socialButton:hover {
+        stroke: rgb(255, 0, 100);
+        width: 3em;
+        height: 3em;
+    }
+
+    div.buttonArea {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 2em;
+        margin-top: 2em;
+        height: 3em;
+    }
 }
 
-h1.name {
-    font-size: 3rem;
-    color: white;
-    text-align: center;
-    margin-bottom: 0;
-}
+div.attribution {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    margin: 3rem;
 
-p.description {
-    font-size: 1.5rem;
-    color: white;
-    text-align: center;
-    margin-top: 12px;
-}
+    div.content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-img.avatar {
-    position: relative;
-    top: 1em;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 15rem;
-    border-radius: 50% 50% 50% 50%;
+        h1.name {
+            font-family: "Yuruka";
+            font-size: 2.4rem;
+            color: #c79fe3;
+            margin-bottom: 0;
+            margin-top: 0;
+            -webkit-text-stroke: 0.12rem black;
+            line-height: 3rem;
+        }
+
+        p.description {
+            font-family: "Outfit";
+            font-size: 1.68rem;
+            color: black;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: 600;
+            text-shadow: 0 0 0.24rem #c79fe3;
+        }
+
+        img.avatar {
+            position: relative;
+            display: inline;
+            height: 7.2rem;
+            border-radius: 10% 10% 10% 10%;
+            border-style: solid;
+            border-color: #c79fe3;
+            border-width: 0.16rem;
+        }
+
+
+    }
+
+    a.icon {
+        font-size: 2em;
+    }
+
+    .socialButton:hover {
+        stroke: #c79fe3;
+        width: 3em;
+        height: 3em;
+    }
+
+
 }
 
 div.buttonArea {
@@ -49,20 +177,15 @@ div.buttonArea {
     align-items: center;
     gap: 2em;
     height: 3em;
-
 }
+
+
 
 .socialButton {
     width: 2em;
     height: 2em;
     transition: stroke 0.2s, width 0.2s, height 0.2s;
     stroke: white;
-}
-
-.socialButton:hover {
-    stroke: rgb(0, 255, 191);
-    width: 3em;
-    height: 3em;
 }
 
 .links {
